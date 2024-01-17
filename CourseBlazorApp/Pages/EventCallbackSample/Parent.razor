@@ -1,0 +1,21 @@
+﻿@page "/EventCallbackSample"
+
+<Child OnRandomGenerated="OnNewNumber"></Child>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numbers</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (int i in Items)
+        {
+            <tr>
+                <td>@i</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
