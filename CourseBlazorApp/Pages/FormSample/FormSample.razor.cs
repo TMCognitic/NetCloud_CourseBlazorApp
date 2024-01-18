@@ -10,7 +10,7 @@ namespace CourseBlazorApp.Pages.FormSample
 
         protected override void OnInitialized()
         {
-            Form = new CreateContactForm();
+            Form = new CreateContactForm(); //résultat de la récupération de données externe
         }
 
         public void Save()

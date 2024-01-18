@@ -13,10 +13,13 @@
     <ValidationMessage For="() => Form.Prenom" />
     <label for="Anniversaire">Anniversaire : </label>
     <InputDate id="Anniversaire" @bind-Value="Form.Anniversaire" class="form-control" />
-    <button type="submit" class="btn btn-primary">Save</button>
     <ValidationMessage For="() => Form.Anniversaire" />
+    <button type="submit" class="btn btn-primary">Save</button>
+    @* OU *@
+    @* 
     <hr />
-    <ValidationSummary />
+    <ValidationSummary /> 
+    *@
 </EditForm>
 
 <div class="alert-success">
