@@ -1,0 +1,24 @@
+﻿@page "/FormSample"
+<PageTitle>Form Sample</PageTitle>
+
+<h3>FormSample</h3>
+
+<EditForm Model="Form" OnValidSubmit="Save">
+    <DataAnnotationsValidator />
+    <label for="Nom">Nom : </label>
+    <InputText id="Nom" @bind-Value="Form.Nom" class="form-control" />
+    <ValidationMessage For="() => Form.Nom" />
+    <label for="Prenom">Prenom : </label>
+    <InputText id="Prenom" @bind-Value="Form.Prenom" class="form-control" />
+    <ValidationMessage For="() => Form.Prenom" />
+    <label for="Anniversaire">Anniversaire : </label>
+    <InputDate id="Anniversaire" @bind-Value="Form.Anniversaire" class="form-control" />
+    <button type="submit" class="btn btn-primary">Save</button>
+    <ValidationMessage For="() => Form.Anniversaire" />
+    <hr />
+    <ValidationSummary />
+</EditForm>
+
+<div class="alert-success">
+    @Content
+</div>
